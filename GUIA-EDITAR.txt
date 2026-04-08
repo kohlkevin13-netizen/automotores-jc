@@ -1,0 +1,182 @@
+=============================================
+  GUÍA PARA EDITAR LA LANDING - AUTOMOTORES JC
+=============================================
+
+Archivo a editar: index.html
+Abrilo con cualquier editor de texto (VS Code, Sublime, Notepad++, o incluso el Bloc de notas)
+
+
+=============================================
+1. AGREGAR UN VEHÍCULO NUEVO
+=============================================
+
+Buscá en el HTML esta línea:
+
+    </div> <!-- cierre de vehicles-grid -->
+
+ANTES de esa línea, pegá este bloque y cambiá los datos:
+
+------- COPIAR DESDE ACÁ -------
+
+                <!-- NOMBRE DEL VEHÍCULO -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/FOTO1.jpg" alt="Descripción foto 1" loading="lazy">
+                            <img src="img/FOTO2.jpg" alt="Descripción foto 2" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge">Destacado</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>MARCA Y MODELO</h3>
+                        <div class="vehicle-year-km">AÑO · KILOMETROS km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                TRANSMISION
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                COMBUSTIBLE
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                COLOR
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20MARCA%20MODELO" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+------- HASTA ACÁ -------
+
+
+QUÉ CAMBIAR:
+- FOTO1.jpg, FOTO2.jpg → nombre de las fotos (ponerlas en la carpeta img/)
+- "auto" o "moto" → en data-category="auto" cambiar según corresponda
+- MARCA Y MODELO → ej: "Toyota Corolla"
+- AÑO → ej: "2019"
+- KILOMETROS → ej: "45.000"
+- TRANSMISION → "Manual" o "Automática"
+- COMBUSTIBLE → "Nafta", "Diesel" o "GNC"
+- COLOR → ej: "Blanco"
+- En el link de WhatsApp cambiar MARCA%20MODELO → ej: "Toyota%20Corolla"
+- "📷 2" → cambiar el número según cuántas fotos tenga
+- Si tiene 3 fotos, agregar una línea más de <img> y un <button class="carousel-dot"></button> más
+
+
+TIPOS DE BADGE (la etiquetita sobre la foto):
+- <div class="vehicle-badge">Destacado</div>          → rojo
+- <div class="vehicle-badge gold">Premium</div>        → dorado
+- <div class="vehicle-badge green">Oportunidad</div>   → verde
+- <div class="vehicle-badge">Moto</div>                → rojo
+- <div class="vehicle-badge">Última unidad</div>       → rojo
+- <div class="vehicle-badge green">Recién ingresado</div> → verde
+
+
+=============================================
+2. ELIMINAR UN VEHÍCULO
+=============================================
+
+Buscá el nombre del vehículo en el HTML (ej: "Mercedes-Benz Clase C Coupé")
+Borrá todo el bloque desde:
+    <div class="vehicle-card fade-up"
+Hasta el cierre:
+    </div> (el que cierra vehicle-card)
+
+Tip: cada vehículo tiene un comentario arriba tipo <!-- MERCEDES-BENZ CLASE C COUPÉ -->
+Borrá desde ese comentario hasta el siguiente comentario de vehículo.
+
+
+=============================================
+3. CAMBIAR FOTOS
+=============================================
+
+1. Poné las fotos nuevas en la carpeta img/
+2. Renombralas sin espacios ni ñ (ej: toyota-corolla-1.jpg)
+3. Cambiá el nombre en el src="img/NOMBRE.jpg"
+4. Tamaño recomendado: mínimo 800x600px, formato JPG
+
+
+=============================================
+4. CAMBIAR DATOS DEL NEGOCIO
+=============================================
+
+- Número de WhatsApp: buscá "5491140676031" y reemplazá todas las apariciones
+- Instagram: buscá "automotores.j.c" y cambialo
+- Horario: buscá "Lunes a Sábado de 9:00 a 18:00"
+- Dirección: buscá "San Martín, Provincia de Buenos Aires"
+- Número del banner arriba: buscá "6 unidades en stock"
+
+
+=============================================
+5. CAMBIAR/AGREGAR TESTIMONIOS
+=============================================
+
+Buscá la sección <!-- TESTIMONIOS --> y copiá un bloque de testimonial-card.
+Cambiá:
+- El texto entre <blockquote>"..."</blockquote>
+- Las iniciales en testimonial-avatar (ej: "ML")
+- El nombre en testimonial-name
+- La zona en testimonial-detail
+- El auto en testimonial-vehicle
+
+
+=============================================
+6. SI USA GEMINI
+=============================================
+
+Puede pegarle este prompt a Gemini:
+
+"Tengo una landing page de autos usados en HTML. Necesito agregar un vehículo nuevo con estos datos:
+- Marca: [marca]
+- Modelo: [modelo]
+- Año: [año]
+- Km: [km]
+- Transmisión: [manual/automática]
+- Combustible: [nafta/diesel]
+- Color: [color]
+- Categoría: [auto/moto]
+- Fotos: [foto1.jpg, foto2.jpg]
+- WhatsApp: 5491140676031
+
+Generame el bloque HTML usando esta estructura exacta: [pegar el template de arriba]"
+
+Y Gemini le va a devolver el bloque listo para pegar.
+
+
+=============================================
+7. SUBIR CAMBIOS
+=============================================
+
+Si la página está en Netlify:
+- Arrastrá la carpeta automotores-jc completa al panel de Netlify
+
+Si está en un hosting normal:
+- Subí el index.html y la carpeta img/ por FTP o file manager
+
+
+=============================================
+RESUMEN RÁPIDO
+=============================================
+✓ Las fotos van en la carpeta img/
+✓ Para agregar un auto: copiar template → pegar → cambiar datos
+✓ Para sacar un auto: buscar el nombre → borrar el bloque entero
+✓ Para cambiar teléfono: buscar y reemplazar el número en todo el archivo
+✓ Siempre probar abriendo el index.html en el navegador antes de subir

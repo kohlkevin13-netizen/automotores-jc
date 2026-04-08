@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotores J.C | Autos y Motos Usadas en San Martín, Buenos Aires</title>
+    <meta name="description" content="Automotores J.C — Autos y motos usadas con garantía escrita, papeles al día y financiación. Mercedes-Benz, Volkswagen y más en San Martín, Buenos Aires.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Automotores J.C | Autos y Motos Usadas">
+    <meta property="og:description" content="Los mejores autos y motos usadas con garantía, financiación y papeles al día. Visitanos en San Martín, Buenos Aires.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://automotoresjc.com">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:image" content="https://automotoresjc.com/img/mercedes-c-3.jpg">
+    <link rel="canonical" href="https://automotoresjc.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e63946'/><text x='50' y='68' font-family='Arial' font-weight='900' font-size='45' fill='white' text-anchor='middle'>JC</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #e63946;
+            --primary-dark: #c1121f;
+            --dark: #0a0a0a;
+            --dark-2: #111111;
+            --dark-3: #1a1a1a;
+            --dark-4: #222222;
+            --gray: #888;
+            --light: #f1f1f1;
+            --white: #ffffff;
+            --gold: #d4a843;
+            --green: #25D366;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 18px;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span { color: var(--primary); }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a:hover { color: var(--white); }
+
+        .nav-cta {
+            background: var(--primary) !important;
+            color: white !important;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600 !important;
+            transition: all 0.3s !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark) !important;
+            transform: translateY(-2px);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background: var(--white);
+            transition: all 0.3s;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 100px 30px 60px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(230, 57, 70, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, rgba(212, 168, 67, 0.06) 0%, transparent 60%);
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(230, 57, 70, 0.15);
+            border: 1px solid rgba(230, 57, 70, 0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5.5vw, 64px);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: var(--gray);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(1.05) contrast(1.1) saturate(1.15);
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 40%;
+            background: linear-gradient(to top, rgba(10,10,10,0.6), transparent);
+        }
+
+        .hero-stats {
+            max-width: 1200px;
+            margin: 60px auto 0;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--white);
+        }
+
+        .stat-number span { color: var(--primary); }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--gray);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 25px rgba(230, 57, 70, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 35px rgba(230, 57, 70, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+        section { padding: 100px 30px; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 17px;
+            color: var(--gray);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        /* FEATURES */
+        .features { background: var(--dark-2); }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--dark-3);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 36px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(230, 57, 70, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(230, 57, 70, 0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* PROCESS STEPS */
+        .process { background: var(--dark); }
+
+        .process-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            position: relative;
+        }
+
+        .process-grid::before {
+            content: '';
+            position: absolute;
+            top: 45px;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--gold), var(--primary));
+            opacity: 0.3;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 900;
+            color: white;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 20px rgba(230, 57, 70, 0.4);
+        }
+
+        .process-step h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* VEHICLE CARDS */
+        .catalog {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .catalog-filters {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 24px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: transparent;
+            color: var(--gray);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .vehicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 28px;
+        }
+
+        .vehicle-card {
+            background: var(--dark-2);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .vehicle-card:hover {
+            border-color: rgba(230, 57, 70, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        /* IMAGE CAROUSEL */
+        .vehicle-carousel {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: var(--dark-3);
+        }
+
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.4s ease;
+        }
+
+        .carousel-track img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            filter: brightness(1.08) contrast(1.12) saturate(1.2);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 5;
+            opacity: 0;
+        }
+
+        .vehicle-card:hover .carousel-btn { opacity: 1; }
+
+        .carousel-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .carousel-btn.prev { left: 10px; }
+        .carousel-btn.next { right: 10px; }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 5;
+        }
+
+        .carousel-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .carousel-dot.active {
+            background: var(--primary);
+            width: 20px;
+            border-radius: 4px;
+        }
+
+        .vehicle-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--primary);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 5;
+        }
+
+        .vehicle-badge.gold {
+            background: linear-gradient(135deg, var(--gold), #b8860b);
+        }
+
+        .vehicle-badge.green {
+            background: var(--green);
+        }
+
+        .photo-count {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .vehicle-info {
+            padding: 24px;
+        }
+
+        .vehicle-info h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .vehicle-year-km {
+            font-size: 14px;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .vehicle-specs {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .spec {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        .spec svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--gray);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .vehicle-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .vehicle-price {
+            font-size: 22px;
+            font-weight: 900;
+            color: var(--white);
+        }
+
+        .vehicle-price small {
+            display: block;
+            font-size: 12px;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        .vehicle-price .finance-tag {
+            display: inline-block;
+            font-size: 11px;
+            color: var(--green);
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        .btn-consultar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .btn-consultar:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(230, 57, 70, 0.4);
+        }
+
+        .btn-consultar svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials { background: var(--dark-2); }
+
+        .testimonials-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--dark-3);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            position: relative;
+            display: none;
+        }
+
+        .testimonial-card.t-visible {
+            display: block;
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(230, 57, 70, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 18px;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-card blockquote {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--light);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 16px;
+            color: white;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .testimonial-detail {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        .testimonial-vehicle {
+            font-size: 12px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .testimonials-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-top: 36px;
+        }
+
+        .t-nav-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--dark-3);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .t-nav-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .t-nav-btn:disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        .t-page-info {
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 600;
+        }
+
+        /* REVIEW FORM */
+        .review-form-box {
+            max-width: 600px;
+            margin: 50px auto 0;
+            background: var(--dark-3);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 36px;
+        }
+
+        .review-form-box h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+        .review-form-box .form-sub {
+            text-align: center;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 24px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .form-row.full {
+            grid-template-columns: 1fr;
+        }
+
+        .review-form-box input,
+        .review-form-box textarea,
+        .review-form-box select {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--dark-4);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .review-form-box input:focus,
+        .review-form-box textarea:focus,
+        .review-form-box select:focus {
+            border-color: var(--primary);
+        }
+
+        .review-form-box textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .review-form-box select {
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .star-select {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .star-select span {
+            font-size: 32px;
+            cursor: pointer;
+            color: rgba(255,255,255,0.15);
+            transition: all 0.2s;
+        }
+
+        .star-select span.star-active {
+            color: var(--gold);
+        }
+
+        .btn-submit-review {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+            margin-top: 10px;
+        }
+
+        .btn-submit-review:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* URGENCY BANNER */
+        .urgency-banner {
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary), var(--primary-dark));
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        .urgency-banner span {
+            color: var(--gold);
+        }
+
+        /* CTA */
+        .cta-section {
+            padding: 100px 30px;
+            text-align: center;
+        }
+
+        .cta-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 24px;
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 400px; height: 400px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 900;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .cta-box p {
+            font-size: 17px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #25D366;
+            color: white;
+            padding: 18px 40px;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1fb855;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        /* UBICACION */
+        .location { background: var(--dark-2); }
+
+        .location-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .location-info h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .location-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        .location-icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: rgba(230, 57, 70, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .location-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .location-item p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .location-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .location-item a:hover {
+            text-decoration: underline;
+        }
+
+        .location-map {
+            background: var(--dark-3);
+            border-radius: 16px;
+            overflow: hidden;
+            height: 350px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark-2);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 40px 30px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-left p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-socials a {
+            width: 44px;
+            height: 44px;
+            background: var(--dark-3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-socials a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-socials svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--gray);
+        }
+
+        .footer-socials a:hover svg { fill: white; }
+
+        /* WHATSAPP FLOAT */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 64px;
+            height: 64px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        .whatsapp-float .float-label {
+            position: absolute;
+            right: 76px;
+            background: white;
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.3s;
+            pointer-events: none;
+        }
+
+        .whatsapp-float .float-label::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 6px solid transparent;
+            border-left-color: white;
+        }
+
+        .whatsapp-float:hover .float-label {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* MOBILE NAV */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100vh;
+            background: rgba(10,10,10,0.98);
+            z-index: 1001;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .mobile-nav.active { display: flex; }
+
+        .mobile-nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .mobile-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 32px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* SCROLL ANIMATION */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .hero-buttons { justify-content: center; }
+            .hero-image { max-height: 300px; }
+            .hero-stats { gap: 30px; }
+            .stat-number { font-size: 28px; }
+
+            .vehicles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .process-grid::before { display: none; }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box { padding: 40px 24px; }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .whatsapp-float .float-label { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- URGENCY BANNER -->
+    <div class="urgency-banner">
+        <span>13 unidades en stock</span> — Se van rápido, consultá disponibilidad
+    </div>
+
+    <!-- HEADER -->
+    <header id="header" style="top: 42px;">
+        <nav>
+            <a href="#" class="logo">
+                <div class="logo-icon">JC</div>
+                <div class="logo-text">AUTOMOTORES <span>J.C</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#vehiculos">Vehículos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#opiniones">Opiniones</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="https://wa.me/5491140676031?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20interesa%20un%20veh%C3%ADculo" target="_blank" class="nav-cta">Contactar</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" onclick="toggleMenu()">&times;</button>
+        <a href="#vehiculos" onclick="toggleMenu()">Vehículos</a>
+        <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
+        <a href="#opiniones" onclick="toggleMenu()">Opiniones</a>
+        <a href="#ubicacion" onclick="toggleMenu()">Ubicación</a>
+        <a href="https://wa.me/5491140676031?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20interesa%20un%20veh%C3%ADculo" target="_blank">Contactar</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" style="padding-top: 140px;">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">San Martín, Buenos Aires</div>
+                <h1>Tu próximo vehículo<br><span class="highlight">te está esperando</span></h1>
+                <p>Autos y motos usadas con papeles al día y financiación. Juan Cruz te asesora personalmente para que encuentres el vehículo ideal.</p>
+                <div class="hero-buttons">
+                    <a href="#vehiculos" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                        Ver stock disponible
+                    </a>
+                    <a href="https://wa.me/5491140676031?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20visita" target="_blank" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Agendar visita
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/mercedes-c-3.jpg" alt="Mercedes-Benz C Coupé en Automotores JC" loading="eager">
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">50<span>+</span></div>
+                <div class="stat-label">Vehículos vendidos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">3<span>+</span></div>
+                <div class="stat-label">Años de experiencia</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100<span>%</span></div>
+                <div class="stat-label">Papeles al día</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="features" id="nosotros">
+        <div class="section-header fade-up">
+            <div class="section-tag">Por qué elegirnos</div>
+            <h2>Comprá tranquilo,<br>Juan Cruz se encarga de todo</h2>
+            <p>Más de 50 vehículos vendidos con transparencia y atención personalizada</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-up">
+                <div class="feature-icon">🔍</div>
+                <h3>Revisión mecánica</h3>
+                <p>Podés traer a tu mecánico de confianza. Acá no se esconde nada, total transparencia.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon">💰</div>
+                <h3>Financiación flexible</h3>
+                <p>Cuotas accesibles para que puedas llegar a tu vehículo. Consultá las opciones disponibles.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon">📋</div>
+                <h3>Papeles al día</h3>
+                <p>Documentación en regla y gestionamos la transferencia por vos. Cero sorpresas.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon">🤝</div>
+                <h3>Tomamos tu usado</h3>
+                <p>Tu auto o moto como parte de pago. Tasación justa y sin compromiso.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon">🛡️</div>
+                <h3>Confianza real</h3>
+                <p>3 años en el rubro y más de 50 clientes satisfechos. Juan Cruz te atiende personalmente.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon">⭐</div>
+                <h3>Atención personalizada</h3>
+                <p>Te asesoramos para que encuentres el vehículo ideal según tu presupuesto y necesidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESO DE COMPRA -->
+    <section class="process">
+        <div class="section-header fade-up">
+            <div class="section-tag">Así de fácil</div>
+            <h2>Tu auto en 3 pasos</h2>
+            <p>Proceso simple, rápido y transparente</p>
+        </div>
+        <div class="process-grid fade-up">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Elegí tu vehículo</h3>
+                <p>Mirá nuestro stock y escribile a Juan Cruz por WhatsApp para consultar disponibilidad y precio.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Vení a conocerlo</h3>
+                <p>Agendamos una visita, lo probás, lo revisás con tu mecánico si querés. Sin presión.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Te lo llevás</h3>
+                <p>Cerramos el acuerdo, hacemos la transferencia y salís manejando tu nuevo vehículo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="vehiculos">
+        <div class="section-header fade-up">
+            <div class="section-tag">Stock disponible</div>
+            <h2>Nuestros vehículos</h2>
+            <p>Explorá el catálogo y encontrá el que buscás</p>
+        </div>
+        <div class="catalog">
+            <div class="catalog-filters fade-up">
+                <button class="filter-btn active" onclick="filterCars('todos', this)">Todos</button>
+                <button class="filter-btn" onclick="filterCars('auto', this)">Autos</button>
+                <button class="filter-btn" onclick="filterCars('moto', this)">Motos</button>
+            </div>
+            <div class="vehicles-grid">
+
+                <!-- MERCEDES-BENZ CLASE C COUPÉ -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/mercedes-c-3.jpg" alt="Mercedes-Benz Clase C Coupé frontal" loading="lazy">
+                            <img src="img/mercedes-c-1.jpg" alt="Mercedes-Benz Clase C Coupé lateral" loading="lazy">
+                            <img src="img/mercedes-c-2.jpg" alt="Mercedes-Benz Clase C Coupé trasera" loading="lazy">
+                            <img src="img/mercedes-c-interior.jpg" alt="Mercedes-Benz Clase C Coupé interior" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge gold">Premium</div>
+                        <div class="photo-count">📷 4</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                            <button class="carousel-dot"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Mercedes-Benz Clase C Coupé</h3>
+                        <div class="vehicle-year-km">2016 · 100.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Automática
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Negro
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Mercedes-Benz%20Clase%20C%20Coup%C3%A9%20negro%202016" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MERCEDES-BENZ CLASE A -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/mercedes-a-1.jpg" alt="Mercedes-Benz Clase A lateral" loading="lazy">
+                            <img src="img/mercedes-a-2.jpg" alt="Mercedes-Benz Clase A frontal" loading="lazy">
+                            <img src="img/mercedes-a-interior.jpg" alt="Mercedes-Benz Clase A interior" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge gold">Premium</div>
+                        <div class="photo-count">📷 3</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Mercedes-Benz Clase A</h3>
+                        <div class="vehicle-year-km">2014 · 120.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Automática
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Gris
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Mercedes-Benz%20Clase%20A%20gris%202014" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VOLKSWAGEN UP! -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/up-1.jpg" alt="Volkswagen Up lateral" loading="lazy">
+                            <img src="img/up-3.jpg" alt="Volkswagen Up frontal" loading="lazy">
+                            <img src="img/up-2.jpg" alt="Volkswagen Up trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge green">Oportunidad</div>
+                        <div class="photo-count">📷 3</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Volkswagen Up!</h3>
+                        <div class="vehicle-year-km">2015 · 113.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Plata
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Volkswagen%20Up%20plata%202015" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VOLKSWAGEN GOL TREND -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/gol-1.jpg" alt="Volkswagen Gol Trend frontal" loading="lazy">
+                            <img src="img/gol-2.jpg" alt="Volkswagen Gol Trend lateral" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge">Destacado</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Volkswagen Gol Trend</h3>
+                        <div class="vehicle-year-km">2012 · 128.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Rojo
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Volkswagen%20Gol%20Trend%20rojo%202012" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BENELLI 302S -->
+                <div class="vehicle-card fade-up" data-category="moto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/benelli-1.jpg" alt="Benelli 302S frontal" loading="lazy">
+                            <img src="img/benelli-2.jpg" alt="Benelli 302S lateral" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge">Moto</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Benelli 302S</h3>
+                        <div class="vehicle-year-km">2023 · 7.500 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                302cc
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Blanca/Roja
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20la%20Benelli%20302S%202023" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAJAJ PULSAR NS 200 -->
+                <div class="vehicle-card fade-up" data-category="moto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/bajaj-1.jpg" alt="Bajaj Pulsar NS 200 lateral" loading="lazy">
+                            <img src="img/bajaj-2.jpg" alt="Bajaj Pulsar NS 200 trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge">Moto</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Bajaj Pulsar NS 200</h3>
+                        <div class="vehicle-year-km">2025 · 14.700 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                200cc
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Negra
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                Consultá precio
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20la%20Bajaj%20Pulsar%20NS%20200%202025" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PEUGEOT 308 ALLURE PACK AT -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/peugeot-308-1.jpg" alt="Peugeot 308 Allure Pack frontal" loading="lazy">
+                            <img src="img/peugeot-308-2.jpg" alt="Peugeot 308 Allure Pack trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge gold">Premium</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Peugeot 308 Allure Pack AT</h3>
+                        <div class="vehicle-year-km">2018 · 30.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Automática
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Gris Plata
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                USD 25.700
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Peugeot%20308%20Allure%20Pack%20AT%202018" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CITROEN C4 LOUNGE -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/citroen-c4-1.jpg" alt="Citroen C4 Lounge frontal" loading="lazy">
+                            <img src="img/citroen-c4-2.jpg" alt="Citroen C4 Lounge trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge green">Oportunidad</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Citroën C4 Lounge</h3>
+                        <div class="vehicle-year-km">2015 · 130.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Gris Oscuro
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                $15.000.000
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Citroen%20C4%20Lounge%202015" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CITROEN DS3 -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/citroen-ds3-1.jpg" alt="Citroen DS3 frontal" loading="lazy">
+                            <img src="img/citroen-ds3-2.jpg" alt="Citroen DS3 trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge">Destacado</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Citroën DS3</h3>
+                        <div class="vehicle-year-km">2014 · 50.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Blanco
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                USD 14.500
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Citroen%20DS3%202014" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIAT 500 LOUNGE -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/fiat-500-1.jpg" alt="Fiat 500 Lounge frontal" loading="lazy">
+                            <img src="img/fiat-500-2.jpg" alt="Fiat 500 Lounge trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge green">Oportunidad</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Fiat 500 Lounge</h3>
+                        <div class="vehicle-year-km">2012 · 150.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Automática
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Blanco
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                USD 12.300
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Fiat%20500%20Lounge%202012" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROUSER NS200 -->
+                <div class="vehicle-card fade-up" data-category="moto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/rouser-ns200-1.jpg" alt="Rouser NS200 lateral izquierdo" loading="lazy">
+                            <img src="img/rouser-ns200-2.jpg" alt="Rouser NS200 lateral derecho" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge">Moto</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Bajaj Rouser NS200</h3>
+                        <div class="vehicle-year-km">2015 · 16.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Negro/Azul
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                $3.300.000
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20la%20Rouser%20NS200%202015" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VW VOYAGE -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/vw-voyage-1.jpg" alt="Volkswagen Voyage frontal" loading="lazy">
+                            <img src="img/vw-voyage-2.jpg" alt="Volkswagen Voyage trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge green">Oportunidad</div>
+                        <div class="photo-count">📷 2</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Volkswagen Voyage</h3>
+                        <div class="vehicle-year-km">2017 · 87.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Gris Plata
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                USD 11.500
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Volkswagen%20Voyage%202017" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PEUGEOT 207 -->
+                <div class="vehicle-card fade-up" data-category="auto">
+                    <div class="vehicle-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <img src="img/peugeot-207-1.jpg" alt="Peugeot 207 frontal" loading="lazy">
+                            <img src="img/peugeot-207-2.png" alt="Peugeot 207 lateral" loading="lazy">
+                            <img src="img/peugeot-207-3.png" alt="Peugeot 207 trasera" loading="lazy">
+                        </div>
+                        <div class="vehicle-badge green">Oportunidad</div>
+                        <div class="photo-count">📷 3</div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active"></button>
+                            <button class="carousel-dot"></button>
+                            <button class="carousel-dot"></button>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Peugeot 207</h3>
+                        <div class="vehicle-year-km">2009 · 104.000 km</div>
+                        <div class="vehicle-specs">
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Manual
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                Nafta
+                            </div>
+                            <div class="spec">
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                Gris Plata
+                            </div>
+                        </div>
+                        <div class="vehicle-bottom">
+                            <div class="vehicle-price">
+                                USD 7.000
+                                <small class="finance-tag">Financiación disponible</small>
+                            </div>
+                            <a href="https://wa.me/5491140676031?text=Hola%2C%20me%20interesa%20el%20Peugeot%20207%202009" target="_blank" class="btn-consultar">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                                Consultá
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials" id="opiniones">
+        <div class="section-header fade-up">
+            <div class="section-tag">Lo que dicen nuestros clientes</div>
+            <h2>Opiniones reales</h2>
+            <p>Más de 50 clientes satisfechos nos respaldan</p>
+        </div>
+        <div class="testimonials-wrapper fade-up">
+            <div class="testimonials-grid" id="testimonialsGrid">
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Compré un Clio Mío y excelente atención. Juan Cruz me explicó todo, los papeles estuvieron al toque y el auto anda perfecto. 100% recomendable."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ML</div>
+                        <div>
+                            <div class="testimonial-name">Martín L.</div>
+                            <div class="testimonial-detail">San Martín</div>
+                            <div class="testimonial-vehicle">Compró: Renault Clio Mío 2015</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Me daba miedo comprar usado pero acá fue otra experiencia. Me dejaron llevar mi mecánico, cero drama y Juan Cruz súper transparente. La EcoSport anda joya."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">FS</div>
+                        <div>
+                            <div class="testimonial-name">Facundo S.</div>
+                            <div class="testimonial-detail">Villa Ballester</div>
+                            <div class="testimonial-vehicle">Compró: Ford EcoSport 2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Busqué moto por todos lados y nadie me daba confianza. Juan Cruz me tomó mi usada como parte de pago y me fui con la Twister el mismo día. Gente seria."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">NC</div>
+                        <div>
+                            <div class="testimonial-name">Nicolás C.</div>
+                            <div class="testimonial-detail">José León Suárez</div>
+                            <div class="testimonial-vehicle">Compró: Honda CB 250 Twister 2020</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Mi viejo me recomendó ir a Automotores JC y no me arrepiento. Compré un Corsa Classic impecable, con pocos km y los papeles listos para transferir. Juan Cruz es un crack."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">DP</div>
+                        <div>
+                            <div class="testimonial-name">Diego P.</div>
+                            <div class="testimonial-detail">Caseros</div>
+                            <div class="testimonial-vehicle">Compró: Chevrolet Corsa Classic 2014</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Soy mujer y en muchas agencias me trataron como si no supiera nada. Acá Juan Cruz me explicó todo con paciencia, me mostró varias opciones y elegí un Fiesta hermoso. Gracias!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">VA</div>
+                        <div>
+                            <div class="testimonial-name">Valentina A.</div>
+                            <div class="testimonial-detail">San Andrés</div>
+                            <div class="testimonial-vehicle">Compró: Ford Fiesta Kinetic 2016</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Necesitaba un utilitario para laburar y Juan Cruz me consiguió una Kangoo impecable. Me financió sin vueltas y ya hace 6 meses que la uso todos los días sin un drama."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RG</div>
+                        <div>
+                            <div class="testimonial-name">Ramiro G.</div>
+                            <div class="testimonial-detail">Villa Lynch</div>
+                            <div class="testimonial-vehicle">Compró: Renault Kangoo 2015</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Le compré una Yamaha FZ a mi hijo para el cumpleaños. Todo rápido, prolijo, y la moto estaba como nueva. Juan Cruz incluso nos ayudó con el seguro. Grande!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">CL</div>
+                        <div>
+                            <div class="testimonial-name">Carlos L.</div>
+                            <div class="testimonial-detail">San Martín</div>
+                            <div class="testimonial-vehicle">Compró: Yamaha FZ 25 2021</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Vendí mi auto viejo acá y me dieron un precio justo, no como en otros lados que te quieren regalar. Al mes volví a comprarle un Voyage a mi señora. Ya somos clientes fijos."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JM</div>
+                        <div>
+                            <div class="testimonial-name">Jorge M.</div>
+                            <div class="testimonial-detail">Billinghurst</div>
+                            <div class="testimonial-vehicle">Compró: Volkswagen Voyage 2016</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Primer auto mío, estaba re nervioso. Juan Cruz me bancó, me explicó la financiación y me armó algo que podía pagar tranquilo. El Palio anda bárbaro, muy contento."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LT</div>
+                        <div>
+                            <div class="testimonial-name">Lautaro T.</div>
+                            <div class="testimonial-detail">San Martín</div>
+                            <div class="testimonial-vehicle">Compró: Fiat Palio 2014</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Compré una Rouser 200 y después la cambié por una 400 acá mismo. Las dos veces impecable. Juan Cruz te da la posta del estado real de la moto, no te chamuyea."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">BF</div>
+                        <div>
+                            <div class="testimonial-name">Brian F.</div>
+                            <div class="testimonial-detail">Chilavert</div>
+                            <div class="testimonial-vehicle">Compró: Bajaj Dominar 400 2022</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Trabajo en delivery y necesitaba una moto urgente. Le escribí un domingo y el lunes ya la tenía. Un Honda Wave impecable y a buen precio. Volvería mil veces."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SM</div>
+                        <div>
+                            <div class="testimonial-name">Sebastián M.</div>
+                            <div class="testimonial-detail">Villa Maipú</div>
+                            <div class="testimonial-vehicle">Compró: Honda Wave 110 2019</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Le compré un Suran a mi mujer para que lleve a los nenes al colegio. Perfecto estado, service al día y Juan Cruz nos gestionó la transferencia en el acto. Un genio."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AG</div>
+                        <div>
+                            <div class="testimonial-name">Alejandro G.</div>
+                            <div class="testimonial-detail">Loma Hermosa</div>
+                            <div class="testimonial-vehicle">Compró: Volkswagen Suran 2015</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Soy del interior y compré por fotos y videos que me mandó Juan Cruz por WhatsApp. Viajé a buscarlo y era exactamente lo que me mostró. Muy honesto, no es común."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ET</div>
+                        <div>
+                            <div class="testimonial-name">Emanuel T.</div>
+                            <div class="testimonial-detail">Rosario, Santa Fe</div>
+                            <div class="testimonial-vehicle">Compró: Peugeot 208 2017</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Llevé a mi mecánico, revisó todo y me dijo 'compralo de una'. El Etios estaba impecable, cero detalles. Los papeles se hicieron rápido y sin costo extra."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MR</div>
+                        <div>
+                            <div class="testimonial-name">Matías R.</div>
+                            <div class="testimonial-detail">Hurlingham</div>
+                            <div class="testimonial-vehicle">Compró: Toyota Etios 2018</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Ya es el tercer vehículo que compro acá. Primero una moto, después un auto para mí y ahora uno para mi hermano. Si Juan Cruz te dice que está bien, está bien. Confianza total."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">PD</div>
+                        <div>
+                            <div class="testimonial-name">Pablo D.</div>
+                            <div class="testimonial-detail">San Martín</div>
+                            <div class="testimonial-vehicle">Compró: Chevrolet Onix 2019</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Tenía un presupuesto ajustado y Juan Cruz me encontró un Siena que estaba perfecto para lo que podía pagar. Otros lados me querían encajar cualquier cosa. Acá no."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LV</div>
+                        <div>
+                            <div class="testimonial-name">Lucas V.</div>
+                            <div class="testimonial-detail">Remedios de Escalada</div>
+                            <div class="testimonial-vehicle">Compró: Fiat Siena 2013</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Mi primer moto después de sacar el registro. Juan Cruz me asesoró cuál convenía para arrancar, me vendió una Rouser 135 piola y me explicó todo el tema de seguro y papeles."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">TH</div>
+                        <div>
+                            <div class="testimonial-name">Thiago H.</div>
+                            <div class="testimonial-detail">Villa Ballester</div>
+                            <div class="testimonial-vehicle">Compró: Bajaj Rouser 135 2020</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="testimonials-nav">
+                <button class="t-nav-btn" id="tPrev" onclick="changeTestimonialPage(-1)">&#8249;</button>
+                <span class="t-page-info" id="tPageInfo">1 / 6</span>
+                <button class="t-nav-btn" id="tNext" onclick="changeTestimonialPage(1)">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- FORMULARIO DE RESEÑA -->
+        <div class="review-form-box fade-up">
+            <h3>Dejá tu opinión</h3>
+            <p class="form-sub">¿Compraste en Automotores JC? Contanos tu experiencia</p>
+
+            <div class="star-select" id="starSelect">
+                <span onclick="setStars(1)">★</span>
+                <span onclick="setStars(2)">★</span>
+                <span onclick="setStars(3)">★</span>
+                <span onclick="setStars(4)">★</span>
+                <span onclick="setStars(5)">★</span>
+            </div>
+
+            <div class="form-row">
+                <input type="text" id="reviewName" placeholder="Tu nombre">
+                <input type="text" id="reviewZone" placeholder="Zona / Localidad">
+            </div>
+            <div class="form-row">
+                <input type="text" id="reviewVehicle" placeholder="Vehículo que compraste">
+                <input type="text" id="reviewYear" placeholder="Año del vehículo">
+            </div>
+            <div class="form-row full">
+                <textarea id="reviewText" placeholder="Contanos tu experiencia..."></textarea>
+            </div>
+            <button class="btn-submit-review" onclick="submitReview()">Enviar opinión</button>
+        </div>
+    </section>
+
+    <!-- CTA WHATSAPP -->
+    <section class="cta-section">
+        <div class="cta-box fade-up">
+            <h2>¿Te interesa alguno?</h2>
+            <p>Escribinos por WhatsApp y agendamos una visita para que lo veas en persona. Sin compromiso, sin presión.</p>
+            <a href="https://wa.me/5491140676031?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20visita%20para%20ver%20un%20veh%C3%ADculo" target="_blank" class="btn-whatsapp">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Escribinos por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="location" id="ubicacion">
+        <div class="section-header fade-up">
+            <div class="section-tag">Visitanos</div>
+            <h2>Nuestra ubicación</h2>
+        </div>
+        <div class="location-content fade-up">
+            <div class="location-info">
+                <h3>Vení a conocernos</h3>
+                <div class="location-item">
+                    <div class="location-icon">📍</div>
+                    <div>
+                        <h4>Dirección</h4>
+                        <p>San Martín, Provincia de Buenos Aires</p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon">📱</div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/5491140676031">11 4067-6031</a></p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon">🕐</div>
+                    <div>
+                        <h4>Horario</h4>
+                        <p>Lunes a Sábado de 9:00 a 18:00</p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon">📸</div>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/automotores.j.c" target="_blank">@automotores.j.c</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26255.89063546536!2d-58.55!3d-34.575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb11c14d9e78d%3A0xf684237e4595ec25!2sSan%20Mart%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo" style="margin-bottom: 10px;">
+                    <div class="logo-icon">JC</div>
+                    <div class="logo-text">AUTOMOTORES <span>J.C</span></div>
+                </div>
+                <p>&copy; 2026 Automotores J.C — Todos los derechos reservados</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/automotores.j.c" target="_blank" title="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://wa.me/5491140676031" target="_blank" title="WhatsApp">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5491140676031?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20interesa%20un%20veh%C3%ADculo" target="_blank" class="whatsapp-float">
+        <span class="float-label">¿Tenés dudas? Escribinos</span>
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script>
+        // Header scroll — adjust for urgency banner
+        const header = document.getElementById('header');
+        const banner = document.querySelector('.urgency-banner');
+
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+            if (window.scrollY > 42) {
+                header.style.top = '0';
+            } else {
+                header.style.top = '42px';
+            }
+        });
+
+        // Mobile menu
+        function toggleMenu() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        }
+
+        // Filter vehicles — fixed: no implicit event.target
+        function filterCars(category, clickedBtn) {
+            const cards = document.querySelectorAll('.vehicle-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            clickedBtn.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'todos' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => card.style.opacity = '1', 10);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.display = 'none', 300);
+                }
+            });
+        }
+
+        // Image carousel
+        function moveCarousel(btn, direction) {
+            const carousel = btn.closest('.vehicle-carousel');
+            const track = carousel.querySelector('.carousel-track');
+            const images = track.querySelectorAll('img');
+            const dots = carousel.querySelectorAll('.carousel-dot');
+            const totalImages = images.length;
+
+            let current = parseInt(track.dataset.current || 0);
+            current += direction;
+
+            if (current < 0) current = totalImages - 1;
+            if (current >= totalImages) current = 0;
+
+            track.style.transform = `translateX(-${current * 100}%)`;
+            track.dataset.current = current;
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === current);
+            });
+        }
+
+        // Dot click — fixed: calculate index relative to carousel
+        document.querySelectorAll('[data-carousel]').forEach(carousel => {
+            const dots = carousel.querySelectorAll('.carousel-dot');
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', function() {
+                    const track = carousel.querySelector('.carousel-track');
+                    track.style.transform = `translateX(-${i * 100}%)`;
+                    track.dataset.current = i;
+                    dots.forEach((d, j) => d.classList.toggle('active', j === i));
+                });
+            });
+        });
+
+        // Touch swipe for carousel
+        document.querySelectorAll('.vehicle-carousel').forEach(carousel => {
+            let startX = 0;
+            let isDragging = false;
+
+            carousel.addEventListener('touchstart', e => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+            }, { passive: true });
+
+            carousel.addEventListener('touchend', e => {
+                if (!isDragging) return;
+                isDragging = false;
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                    const btn = carousel.querySelector(diff > 0 ? '.next' : '.prev');
+                    btn.click();
+                }
+            });
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Auto-rotate carousels every 5s
+        document.querySelectorAll('[data-carousel]').forEach(carousel => {
+            setInterval(() => {
+                const nextBtn = carousel.querySelector('.next');
+                if (nextBtn && !carousel.matches(':hover')) {
+                    nextBtn.click();
+                }
+            }, 5000);
+        });
+
+        // === TESTIMONIALS PAGINATION ===
+        let tPage = 0;
+        const perPage = window.innerWidth <= 768 ? 1 : 3;
+        const tCards = document.querySelectorAll('#testimonialsGrid .testimonial-card');
+        const totalPages = Math.ceil(tCards.length / perPage);
+
+        function showTestimonialPage() {
+            tCards.forEach((card, i) => {
+                card.classList.toggle('t-visible', i >= tPage * perPage && i < (tPage + 1) * perPage);
+            });
+            document.getElementById('tPageInfo').textContent = `${tPage + 1} / ${totalPages}`;
+            document.getElementById('tPrev').disabled = tPage === 0;
+            document.getElementById('tNext').disabled = tPage === totalPages - 1;
+        }
+
+        function changeTestimonialPage(dir) {
+            tPage = Math.max(0, Math.min(totalPages - 1, tPage + dir));
+            showTestimonialPage();
+        }
+
+        showTestimonialPage();
+
+        // === REVIEW FORM ===
+        let selectedStars = 5;
+
+        function setStars(n) {
+            selectedStars = n;
+            document.querySelectorAll('#starSelect span').forEach((s, i) => {
+                s.classList.toggle('star-active', i < n);
+            });
+        }
+        setStars(5);
+
+        function submitReview() {
+            const name = document.getElementById('reviewName').value.trim();
+            const zone = document.getElementById('reviewZone').value.trim();
+            const vehicle = document.getElementById('reviewVehicle').value.trim();
+            const year = document.getElementById('reviewYear').value.trim();
+            const text = document.getElementById('reviewText').value.trim();
+
+            if (!name || !text) {
+                alert('Por favor completá al menos tu nombre y tu experiencia.');
+                return;
+            }
+
+            const msg = `Nueva reseña de la web:%0A%0A` +
+                `⭐ ${selectedStars}/5%0A` +
+                `👤 ${encodeURIComponent(name)}%0A` +
+                `📍 ${encodeURIComponent(zone || 'No indicó')}%0A` +
+                `🚗 ${encodeURIComponent(vehicle || 'No indicó')} ${encodeURIComponent(year || '')}%0A%0A` +
+                `"${encodeURIComponent(text)}"`;
+
+            window.open(`https://wa.me/5491140676031?text=${msg}`, '_blank');
+
+            alert('¡Gracias por tu opinión! Juan Cruz la va a recibir por WhatsApp.');
+            document.getElementById('reviewName').value = '';
+            document.getElementById('reviewZone').value = '';
+            document.getElementById('reviewVehicle').value = '';
+            document.getElementById('reviewYear').value = '';
+            document.getElementById('reviewText').value = '';
+            setStars(5);
+        }
+    </script>
+
+</body>
+</html>
